@@ -1,0 +1,7 @@
+:root {
+  --newColor: white;
+}
+
+body {
+  background-color: var(--newColor);
+}
