@@ -1,0 +1,13 @@
+.toolbar {
+  background-color: #fff;
+  border-top: 1px solid var(--grayColor);
+  border-bottom: 1px solid var(--grayColor);
+  /* Це потвор */
+  padding: 4px 0; 
+  padding-left: 38px;
+  display: flex;
+}
+
+.toolbar_top-indention {
+  margin-top: 12px;
+}

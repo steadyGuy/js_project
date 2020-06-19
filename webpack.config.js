@@ -53,8 +53,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{
-        from: path.resolve(__dirname, 'src/favicon.ico'),
-        to: path.resolve(__dirname, 'dist'),
+        from: path.resolve(__dirname, 'src/img'),
+        to: path.resolve(__dirname, 'dist/img'),
       }],
     }),
     new MiniCssExtractPlugin({
@@ -63,12 +63,24 @@ module.exports = {
   ],
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'src'),
+    watchContentBase: isDev, // чтобы обновлять html файл
     hot: isDev,
     port: 3000,
   },
   module: {
     rules: [
+      {
+        test: /\.(png|jpg|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+      },
+      {
+        test: /\.(png|jpg|jpe?g|gif)$/i,
+        loader: 'image-webpack-loader',
+      },
       {
         test: /\.css$/i,
         use: [

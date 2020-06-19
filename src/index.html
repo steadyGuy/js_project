@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <title>Some title</title>
-  </head>
-  <body>
-    <div id="app" class="container"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>Some title</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div class="excel">
+
+      <div class="container">
+        <div class="header header_indention">
+
+          <div class="logo header__logo">
+            <img src="./img/logo.png" class="logo__img" alt="Logo of spreadsheets">
+          </div>
+
+          <input type="text" value="Моя таблица" class="header__table-name">
+          <div class="nav">
+            <nav>
+              <ul class="nav__list">
+                <li class="nav__item">Файл</li>
+                <li class="nav__item">Справка</li>
+                <li class="nav__item">Формат</li>
+                <li class="nav__item">Правка</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar toolbar_top-indention">
+
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_align_left
+          </span>
+        </div>
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_align_center
+          </span>
+        </div>
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_align_right
+          </span>
+        </div>
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_bold
+          </span>
+        </div>
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_italic
+          </span>
+        </div>
+        <div class="button">
+          <span class="material-icons button__icon">
+            format_underlined
+          </span>
+        </div>
+      </div>
+
+      <div class="formula">
+        <div class="formula__info">
+          fx
+        </div>
+        <div class="formula__input" contenteditable="" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="table">
+        <div class="table__row">
+
+          <div class="table__info"></div>
+
+          <div class="table__data">
+            <div class="table__column">A</div>
+            <div class="table__column">B</div>
+            <div class="table__column">C</div>
+          </div>
+
+        </div>
+
+        <div class="table__row">
+          <div class="table__info">1</div>
+          <div class="table__data">
+            <div class="table__cell table__cell_selected" contenteditable="">A1</div>
+            <div class="table__cell" contenteditable="">B1</div>
+            <div class="table__cell" contenteditable="">C1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</body>
+
 </html>

@@ -1,4 +1,4 @@
 import './module';
 import './css/index.css';
 
-console.log('Hello, world!');
+console.log('Hello, worlasdsadsadsad!');
