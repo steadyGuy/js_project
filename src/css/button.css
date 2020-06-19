@@ -1,0 +1,16 @@
+.button {
+  color: #525558;
+  display: flex;
+}
+
+.button__icon {
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.button__icon:hover {
+  background-color: #f0f0f0;
+}

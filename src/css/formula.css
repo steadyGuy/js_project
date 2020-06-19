@@ -1,0 +1,26 @@
+
+
+
+.formula {
+  display: flex;
+  /* Це потвор */
+  padding: 4px 0; 
+  padding-left: 16px;
+  border-bottom: 1px solid var(--grayColor);
+}
+
+.formula__info {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  border-right: 1px solid var(--grayColor);
+  min-width: var(--cellWidth);
+  padding-right: 16px;
+}
+
+.formula__input {
+  padding: 4px 6px;
+  outline: none;
+  width: 100%;
+  color: #222222;
+}

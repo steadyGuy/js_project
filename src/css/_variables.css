@@ -1,0 +1,8 @@
+:root {
+  --accentColor: #3c86e6;
+  --grayColor: #dadce0;
+
+  --cellWidth: 40px;
+  --cellWidthMain: 120px;
+  --rowHeight: 24px;
+}

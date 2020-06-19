@@ -1,0 +1,35 @@
+@import "_variables.css";
+@import "_mixins.css";
+
+.header_indention {
+  margin-top: 16px;
+}
+
+.header {
+  display: flex;
+  max-height: 80px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__table-name {
+  height: 28px;
+  max-width: 150px;
+  border: solid 1.5px transparent;
+  margin-left: 16px;
+  font-size: 18px;
+  padding: 4px 4px 4px 8px;
+  border-radius: 3px;
+}
+
+.header__table-name:hover {
+  border-color: var(--grayColor);
+}
+
+.header__table-name:focus {
+  outline: none;
+  border: solid 1.5px var(--accentColor);
+}
